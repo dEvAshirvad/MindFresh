@@ -1,0 +1,251 @@
+@font-face {
+    font-family: brandd;
+    src: url(/fonts/Windlesham\ Pro.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: brandd;
+    src: url(/fonts/Windlesham\ Pro\ Light.ttf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: brandd;
+    src: url(/fonts/Windlesham\ Pro\ Medium.ttf);
+    font-weight: bolder;
+}
+
+:root {
+    --brand-color : #003E1F;
+    --accent-color : #049A5B;
+    --background : #f5fffb;
+    --black : black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: brandd;
+    scroll-behavior: smooth;
+}
+
+.flexy {
+    display: flex;
+}
+
+li , a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 2.441rem;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 1.953rem;
+}
+
+a {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    opacity: .65;
+    font-weight: lighter;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    z-index: 20;
+}
+
+nav {
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuLinks {
+    gap: 30px;
+}
+
+nav h1 {
+    font-size: 1.953rem;
+    font-weight: normal;
+}
+
+.hero {
+    padding-top: 120px;
+}
+
+.hero .container {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    flex: none;
+    width: 100%;
+    aspect-ratio: 4 / 1.8;
+    padding: 50px 0;
+    gap: 50px;
+    filter: grayscale(90%);
+}
+
+.slideContent {
+    align-self: flex-end;
+    width: 50%;
+}
+
+.slideContent h1 {
+    padding-left: 50px;
+    padding-top: 8px;
+    padding-right: 30px;
+    color: #f1fff9;
+    background-color: black;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.slideContent p {
+    padding: 12px 0;
+    padding-left: 50px;
+    padding-right: 20px;
+    color: #f1fff9;
+    font-weight: lighter;
+    background-color: black;
+    opacity: 1;
+}
+
+.slidePic {
+    width: 50%;
+}
+
+.slide1 {
+    background-image: url(/assets/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.quote .container {
+    padding: 60px 60px 60px 200px;
+}
+
+
+.about .container {
+    gap: 30px;
+}
+
+.about .container .storepic {
+    width: 220%;
+}
+
+.story {
+    margin-top: 160px;
+}
+
+.storepic {
+    background-image: url(/assets/aboutStore.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.storeabout {
+    padding: 40px;
+}
+
+.storeabout h1 {
+    margin-bottom: 25px;
+}
+
+.pgap {
+    margin-bottom: 15px;
+}
+
+.story .container {
+    flex-direction: column;
+    gap : 50px
+}
+
+.storyContent {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.storyContent span {
+    width: 85ch;
+}
+
+.storyContent h1 {
+    margin-bottom: 25px;
+}
+
+.storyPic {
+    width: 100%;
+    aspect-ratio: 4 / 1.4;
+    background-image: url(/assets/story.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.contact .container {
+    gap: 30px;
+}
+
+.contact .container div {
+    width: 50%;
+}
+
+.contactInfo {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contactInfo span h1 {
+    font-size: 20px;
+}
+
+.footer {
+    margin-bottom: 40px;
+}
+
+.footer .container {
+    justify-content: space-between;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+}
+
